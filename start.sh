@@ -12,6 +12,8 @@ SERVER_PORT=${SCHEMASPY_PORT-8080}
 OUTPUT_PATH=${OUTPUT_PATH-output}
 SCHEMASPY_PATH=${SCHEMASPY_PATH-lib/schemaspy.jar}
 
+echo "------------------------------------------------------------"
+
 if [ -z "$DB_TYPE" ]; then
 	echo "ERROR: Environment variable DATABASE_TYPE is empty."
 	FAIL=1
